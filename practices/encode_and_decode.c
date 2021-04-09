@@ -114,7 +114,7 @@ void welcome(void)
     /* welcome page */
     printf("***************************************************************\n");
     printf("*                                                             *\n");
-    printf("*        WELCOME TO  LSP ENCODING & DECODING SYSTEM           *\n");
+    printf("*        WELCOME TO  XXX ENCODING & DECODING SYSTEM           *\n");
     printf("*                                                             *\n");
     printf("***************************************************************\n");
     printf("*    1. ------------------- Encoding                          *\n");
@@ -128,7 +128,7 @@ void welcome(void)
     }
     else
     {
-        printf("Input your choice:");
+        printf("Input your choice(1 or 2 or 0):");
     }
 }
 
@@ -151,13 +151,14 @@ void print_b(unsigned char ch)
     int bits = sizeof(unsigned char) * 8;
     unsigned char str[bits];
     int len = bits;
+    int i;
     while (bits > 0) 
     {
         str[bits-1] = ch % 2;
         ch = ch / 2;
         bits--; 
     }
-    for (int i=0; i<len; i++)
+    for (i=0; i<len; i++)
     {
         printf("%u", str[i]);
     }
