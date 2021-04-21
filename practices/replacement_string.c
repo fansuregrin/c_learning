@@ -1,3 +1,9 @@
+/******************************************************************************
+author: fansuregrin
+time: 2021-04-21
+description: replace a string's last 3 characters with the other string's last 3 characters
+******************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 
